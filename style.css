@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: rgb(20, 20, 20);
+}
+
+
+
+header{
+    display: flex;
+    height: 100px;
+    background-color: rgb(11, 33, 66);
+    padding: 0 40px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+.logo h2{
+    display: flex;
+    text-transform: uppercase;
+    color: rgb(235, 235, 235);
+    font-weight: 200;
+   
+}
+
+
+#menu a {
+    color: rgb(4, 20, 58);
+    background-color: aliceblue;
+    border-radius: 2px 2px 2px 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    margin: 10px;
+    /*margin-left: -10px;*/
+    transition: all 500ms;
+    
+}
+
+
+#menu a:hover{
+    background: rgb(50, 50, 50);;
+    color:rgb(114, 114, 114);
+    transition: all 500ms;
+    
+}
+
+#btnmenu{
+    display:none;
+    justify-content:center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    transition: .5s;
+    cursor: pointer;
+    border-radius: 5px;
+    scale: 1.1;
+    
+}
+
+#btnmenu2{
+    display:none;
+
+    
+}
+
+#btnmenu:hover{
+    color: aliceblue;
+    background: rgba(0, 0, 0, 0.4); 
+}
+
+
+
+
+@media screen and (max-width:720px){
+    
+    #menu{
+        position: fixed;
+        background: rgb(20, 20, 20);
+        box-shadow: 10px 10px black;
+        top: 0;
+        right: -330px;
+        width: 230px;
+        height: 100vh;
+        padding: 10px;
+        box-shadow: 10px 10px black;
+        transition: all 500ms;
+        z-index: 100;
+        
+        
+    }
+
+    header #menu a{
+        background-color: rgba(240, 248, 255);
+        display: flex;
+        color: rgb(19, 42, 100);
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin: 30px;
+        
+        
+    }
+
+    #menu a:hover{
+        background: rgb(50, 50, 50);
+        color:rgb(114, 114, 114);
+        
+    }
+
+    #btnmenu2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background: white;
+        opacity: .5;
+        transition: all 500ms;
+        
+    }
+
+    #btnmenu2:hover{
+        color: aliceblue;
+        background: rgba(0, 0, 0, 0.4);       
+    }
+
+    #btnmenu{
+        display: none;
+        justify-content:center ;
+        align-items: center;
+        margin: 9px;
+        transition: all 500ms;
+        cursor: pointer;
+        background: white;
+        opacity: .5;
+        border-radius: 5px;
+        width: 20px;
+        height: 20px;
+        
+    }
+
+}
+
